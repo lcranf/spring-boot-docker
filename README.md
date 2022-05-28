@@ -14,7 +14,7 @@ Very Simple application that runs a SpringBoot app in a Docker Container
 
 ## Build
 
-Go to the project directy
+Go to the project directory
 
 ```bash
   docker build -t spring-boot-docker:0.0.1 .
@@ -30,7 +30,7 @@ Go to the project directory
 
 Open browser to [http://localhost:8080](http://localhost:8080)
 
-## Build and Run without Docker pre-built Docker Image
+## Build and Run without a pre-built Docker Image
 Build package via Maven using Docker
 
 ```bash
