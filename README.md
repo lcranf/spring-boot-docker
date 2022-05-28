@@ -1,7 +1,7 @@
 
 # Spring Boot Docker
 
-Very Simple application that runs SpringBoot in a Docker Container
+Very Simple application that runs a SpringBoot app in a Docker Container
 
 
 ## Prerequisites
@@ -12,22 +12,25 @@ Very Simple application that runs SpringBoot in a Docker Container
   - Select Java as a Laguage
   - Add Spring Web as a dependency
 
+## Build
 
-    
-## Run Locally
-
-Clone the project
+Go to the project directy
 
 ```bash
-  git clone https://link-to-project
+  docker build -t spring-boot-docker:0.0.1 .
 ```
+
+## Run Locally
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  docker run -it -p 8080:8080 spring-boot-docker:0.0.1
 ```
 
+Open browser to [http://localhost:8080](http://localhost:8080)
+
+## Build and Run without Docker pre-built Docker Image
 Build package via Maven using Docker
 
 ```bash
